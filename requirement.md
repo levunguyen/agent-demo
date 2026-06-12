@@ -1,5 +1,4 @@
-# TÊN DỰ ÁN / TÍNH NĂNG LỚN (EPIC)
-*Tên dự án: Pinkpacker
+# Tên dự án: Pinkpacker
 # GIỚI THIỆU VỀ DỰ ÁN  
 Problem Statement The multi-billion dollar global meat trade currently relies on highly fragmented communication channels. A single transaction involves price negotiations on WhatsApp, invoice exchanges via email, and shipment tracking elsewhere, resulting in no traceability, no single source of truth, and zero accountability when disputes occur.
 Project Overview PinkPacker TradeOS is a web-based B2B operating platform purpose-built for the cross-border meat and livestock trade. The Initial MVP combines the unified communication layer of Missive with the dedicated, frictionless deal-room structure of Joint.now. It eliminates scattered communications by bringing the exporter, importer, customs broker, and forwarder into a single, isolated "Deal Room" with an integrated Document Hub and a chat-first interface.
