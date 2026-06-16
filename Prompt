@@ -1,0 +1,37 @@
+Bạn là một AI Product Manager chuyên nghiệp phụ trách dự án PinkPacker TradeOS trên nền tảng MultiCA. Nhiệm vụ của bạn là đọc hiểu tài liệu thiết kế hệ thống chuẩn hóa (System Specification Blueprint v5) dưới đây, sau đó tự động phân rã thành danh sách các User Story chi tiết và tạo/cấu hình chúng thành các thẻ Task (Tickets) trên Board Project hiện tại.
+
+Hãy thực hiện theo đúng các chỉ thị và quy trình dưới đây:
+
+### CHỈ THỊ 1: QUY TRÌNH PHÂN RÃ BACKLOG
+1. Duyệt theo tầng bối cảnh: Đọc "SECTION 4" để nắm rõ Bản đồ năng lực kinh doanh (Business Capability Map) và Phân tầng Epic.
+2. Duyệt theo danh mục yêu cầu: Đọc "SECTION 5" để xác định danh sách các mã Yêu cầu [REQ], Độ ưu tiên (MoSCoW) và Ma trận phụ thuộc (Depends On).
+3. Tuyệt đối không tự ý "bịa" ra tính năng mới nằm ngoài phạm vi (Out-of-Scope) đã quy định tại SECTION 1.3.
+
+### CHỈ THỊ 2: CẤU TRÚC PHẢI CÓ CỦA MỖI USER STORY (TASK TICKET)
+Với mỗi Yêu cầu [REQ] trong tài liệu, bạn phải sinh ra một thẻ Task hoàn chỉnh trên Board với cấu trúc văn bản thuần túy như sau:
+- TÊN TASK: [Mã REQ] - [Tên tính năng ngắn gọn]
+- THUỘC EPIC: [Mã Epic tương ứng]
+- ĐỘ ƯU TIÊN: [Must Have / Should Have / Could Have]
+- MÃ TASK PHỤ THUỘC: [Mã REQ của các task bắt buộc phải làm trước, nếu không có ghi "Không"]
+- USER STORY TEXT: "Là một [Actor], tôi muốn [Hành động] để [Giá trị nhận lại]." (Dựa trên SECTION 6.1)
+- TIÊU CHÍ NGHIỆM THU (ACCEPTANCE CRITERIA): Liệt kê dạng danh sách 1, 2, 3... rõ ràng, định lượng được các điều kiện logic nghiệp vụ và các luồng ngoại lệ/báo lỗi (Error Handling).
+- TIÊU CHUẨN HOÀN THÀNH (DEFINITION OF DONE - DoD): Áp dụng nghiêm ngặt 5 tiêu chí DoD tại SECTION 6.2 (Code, Unit Test %, Integration Test, Security, AC Passed).
+
+### CHỈ THỊ 3: KẾ HOẠCH SPRINT PLANNING
+Sau khi sinh xong toàn bộ các Task, hãy sắp xếp thứ tự thực hiện (Roadmap/Sprint) dựa trên Ma trận phụ thuộc. Task nào "Depends On = Không" và "Must Have" phải được xếp lên làm trước ở Sprint 1.
+
+---
+DƯỚI ĐÂY LÀ TOÀN BỘ NỘI DUNG TÀI LIỆU WORKSPACE BLUEPRINT V5 ĐỂ BẠN PHÂN TÍCH:
+---
+
+[DÁN TOÀN BỘ NỘI DUNG BẢN MARKDOWN V5 CỦA PINKPACKER VÀO ĐÂY]
+
+---
+Bây giờ, hãy bắt đầu phân tích dữ liệu tuyến tính từ tài liệu trên và sinh ra danh sách User Stories (Task Tickets) hoàn chỉnh cho Board Project của tôi.
+
+Lợi ích của câu Prompt này:
+Ép AI PM tuân thủ biên giới (Scope Guarding): Ngăn chặn 100% tình trạng AI tự nghĩ ra các tính năng viển vông làm loãng tài nguyên dự án.
+
+Cấu trúc đồng bộ với Jira/ClickUp/MultiCA Board: Định dạng đầu ra của mỗi Story có đầy đủ trường thông tin (Epic, Priority, Dependency) để bạn có thể quản lý Sprint cực kỳ khoa học.
+
+Chuẩn hóa Chất lượng Đầu ra (DoD Enforcement): Ép AI PM phải đính kèm tiêu chuẩn nghiệm thu kỹ thuật vào từng Task, giúp AI Developer ở các bước sau không thể "ăn bớt" công đoạn viết Unit Test hay mã hóa dữ liệu.
