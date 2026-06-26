@@ -1,16 +1,73 @@
-# React + Vite
+# Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A lightweight, frontend-only Todo List application built with React, Vite, and Tailwind CSS v4. Tasks persist in the browser via LocalStorage — no backend required.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Layer | Technology |
+|---|---|
+| Framework | React 19 + Vite 8 |
+| Styling | Tailwind CSS v4 |
+| Storage | Browser LocalStorage |
+| Linting | Oxlint |
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Prerequisites
 
-## Expanding the Oxlint configuration
+- Node.js 18+
+- npm 9+
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Install & Run
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Build for Production
+
+```bash
+npm run build
+```
+
+Output is in the `dist/` folder. Deploy to any static host (Vercel, Netlify, GitHub Pages).
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Features (v1.0)
+
+- Add new tasks
+- Toggle tasks as complete / incomplete
+- Delete tasks
+- Edit task names
+- Filter tasks: All / Active / Completed
+- Tasks persist across page refreshes via LocalStorage
+
+## Project Structure
+
+```
+todo-app/
+├── src/
+│   ├── App.jsx         # Root component
+│   ├── App.css         # Global styles
+│   ├── main.jsx        # Entry point
+│   └── index.css       # Tailwind base imports
+├── public/             # Static assets
+├── index.html          # HTML entry
+├── vite.config.js      # Vite configuration
+└── package.json
+```
+
+## License
+
+MIT
