@@ -1,73 +1,39 @@
 # Todo App
 
-A lightweight, frontend-only Todo List application built with React, Vite, and Tailwind CSS v4. Tasks persist in the browser via LocalStorage — no backend required.
+A lightweight, frontend-only Todo List built with **React 19**, **Vite 8**, and **Tailwind CSS v4**. Tasks persist in localStorage — no backend required.
 
-## Tech Stack
+![App Screenshot](./public/screenshot.png)
 
-| Layer | Technology |
+## Prerequisites
+
+- **Node.js 18+** — [nodejs.org](https://nodejs.org/)
+- **npm 9+** (bundled with Node)
+
+## Quick Start
+
+```bash
+npm install      # Install dependencies
+npm run dev      # Start dev server → http://localhost:5173
+```
+
+That's it. You should be up and running in under 2 minutes.
+
+## Commands
+
+| Command | What it does |
 |---|---|
-| Framework | React 19 + Vite 8 |
-| Styling | Tailwind CSS v4 |
-| Storage | Browser LocalStorage |
-| Linting | Oxlint |
+| `npm run dev` | Start dev server with hot reload |
+| `npm run build` | Production build → `dist/` |
+| `npm run test` | Lint & static analysis (oxlint) |
+| `npm run preview` | Preview the production build locally |
 
-## Getting Started
+## Features
 
-### Prerequisites
+- Add, edit, and delete tasks
+- Toggle tasks complete / incomplete
+- Filter view: All · Active · Completed
+- Data persists across page refreshes (localStorage)
 
-- Node.js 18+
-- npm 9+
+## Deploy
 
-### Install & Run
-
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-```
-
-Open [http://localhost:5173](http://localhost:5173) in your browser.
-
-### Build for Production
-
-```bash
-npm run build
-```
-
-Output is in the `dist/` folder. Deploy to any static host (Vercel, Netlify, GitHub Pages).
-
-### Preview Production Build
-
-```bash
-npm run preview
-```
-
-## Features (v1.0)
-
-- Add new tasks
-- Toggle tasks as complete / incomplete
-- Delete tasks
-- Edit task names
-- Filter tasks: All / Active / Completed
-- Tasks persist across page refreshes via LocalStorage
-
-## Project Structure
-
-```
-todo-app/
-├── src/
-│   ├── App.jsx         # Root component
-│   ├── App.css         # Global styles
-│   ├── main.jsx        # Entry point
-│   └── index.css       # Tailwind base imports
-├── public/             # Static assets
-├── index.html          # HTML entry
-├── vite.config.js      # Vite configuration
-└── package.json
-```
-
-## License
-
-MIT
+Run `npm run build`, then deploy the `dist/` folder to any static host — Vercel, Netlify, or GitHub Pages all work out of the box.
